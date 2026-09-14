@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next'
 import { useEffect, useId, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import Icon from './Icon'
 
 export default function Modal({ title, onClose, children, className = '', trapFocus = false }) {
+  const { t } = useTranslation()
+
   const dialogRef = useRef(null)
   const titleId = useId()
   useEffect(() => {
@@ -36,7 +39,7 @@ export default function Modal({ title, onClose, children, className = '', trapFo
       }}>
       <div className="flex items-start justify-between gap-4 border-b border-brand-border pb-5">
         <h2 id={titleId} className="font-serif text-2xl font-semibold text-brand-navy sm:text-3xl">{title}</h2>
-        <button type="button" onClick={onClose} aria-label="Close dialog" className="shrink-0 rounded-full border border-brand-border p-2.5 hover:bg-brand-neutral"><Icon name="close" /></button>
+        <button type="button" onClick={onClose} aria-label={t('modal.closeDialog')} className="shrink-0 rounded-full border border-brand-border p-2.5 hover:bg-brand-neutral"><Icon name="close" /></button>
       </div>
       <div className="pt-6">{children}</div>
     </dialog>, document.body,

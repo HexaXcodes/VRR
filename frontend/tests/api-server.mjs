@@ -10,9 +10,14 @@ process.env.FRONTEND_URL = 'http://127.0.0.1:5174'
 process.env.TRUST_PROXY = '0'
 const mongo = await MongoMemoryServer.create({ binary: { downloadDir: fileURLToPath(new URL('../../backend/node_modules/.cache/mongodb-memory-server', import.meta.url)) } })
 await mongoose.connect(mongo.getUri())
-const server = createApp().listen(5099, '127.0.0.1')
+// Separate application instances isolate each suite's real rate-limit quota.
+// Both retain the unchanged production middleware and use only this disposable DB.
+const servers = [5099, 5100].map(port => createApp().listen(port, '127.0.0.1'))
 async function shutdown() {
-  server.close(async () => { await mongoose.disconnect(); await mongo.stop(); process.exit(0) })
+  await Promise.all(servers.map(server => new Promise(resolve => server.close(resolve))))
+  await mongoose.disconnect()
+  await mongo.stop()
+  process.exit(0)
 }
 process.once('SIGTERM', shutdown)
 process.once('SIGINT', shutdown)

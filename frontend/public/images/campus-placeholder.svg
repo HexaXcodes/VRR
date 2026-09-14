@@ -3,6 +3,6 @@
 <rect width="800" height="760" fill="url(#bg)"/><rect width="800" height="760" fill="url(#grid)"/>
 <circle cx="400" cy="310" r="62" fill="#FCFBF7" stroke="#E6E4DC"/>
 <g fill="none" stroke="#C8922F" stroke-width="3" stroke-linejoin="round"><path d="m366 304 34-18 34 18-34 18Zm12 8v19q22 17 44 0v-19m12-8v30"/></g>
-<text x="400" y="416" text-anchor="middle" font-family="Georgia,serif" font-size="32" fill="#071A33">A place to learn. A path to grow.</text>
-<text x="400" y="456" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#5C6470">Campus photography coming soon</text>
+
+
 </svg>
