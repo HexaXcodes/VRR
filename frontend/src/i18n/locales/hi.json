@@ -90,7 +90,8 @@
     "assessment": "आकलन",
     "select": "चुनाव",
     "admission": "प्रवेश",
-    "startAdmissionEnquiry": "प्रवेश के बारे में पूछें"
+    "startAdmissionEnquiry": "प्रवेश के बारे में पूछें",
+    "integratedProgramme": "PU समेकित शैक्षणिक कार्यक्रम में प्रवेश"
   },
   "campusSection": {
     "classroom": "कक्षा",
@@ -230,7 +231,10 @@
     "chapterWiseTesting": "अध्यायवार परीक्षाएँ",
     "expertFaculty": "विशेषज्ञ शिक्षक",
     "imageAlt": "कैंपस की फ़ोटो जल्द उपलब्ध होंगी",
-    "imageTitle": "सीखने की जगह। आगे बढ़ने की राह।"
+    "imageTitle": "सीखने की जगह। आगे बढ़ने की राह।",
+    "integratedProgramme": "PU समेकित शैक्षणिक कार्यक्रम",
+    "associationCollege": "शांति निकेतन PU कॉलेज",
+    "integratedPathway": "कैंपस से जुड़ी एक शैक्षणिक राह: PU शिक्षा + JEE / NEET / KCET की तैयारी।"
   },
   "learningSystem": {
     "concept": "अवधारणा",
@@ -336,7 +340,8 @@
         "हार्डवेयर सिस्टम्स"
       ],
       "bestFor": "इलेक्ट्रॉनिक्स, हार्डवेयर, सर्किट, रोबोटिक्स और इंजीनियरिंग सिस्टम्स में रुचि रखने वाले विद्यार्थी।"
-    }
+    },
+    "puCombinationContext": "अपना PU विषय समूह चुनें और उच्च शिक्षा के लक्ष्यों से जुड़ी प्रतियोगी परीक्षाओं की तैयारी करें।"
   },
   "resultsSection": {
     "selectedVrrAlumni2ndPuc2025": "VRR के पूर्व विद्यार्थियों की चुनिंदा उपलब्धियाँ • द्वितीय PUC 2025",
@@ -366,8 +371,8 @@
     "regularAssessmentAndFacultyInteractionHelp": "नियमित आकलन और शिक्षकों से बातचीत से हम समझते हैं कि हर विद्यार्थी कैसे आगे बढ़ रहा है और कहाँ अतिरिक्त सहायता उपयोगी हो सकती है।"
   },
   "trustStrip": {
-    "integratedPreparation": "समेकित तैयारी",
-    "puBoardsKcetJeeNeet": "PU बोर्ड + KCET / JEE / NEET",
+    "integratedPreparation": "PU + प्रतियोगी परीक्षाओं की समेकित तैयारी",
+    "puBoardsKcetJeeNeet": "PU की पढ़ाई + JEE / NEET / KCET की तैयारी",
     "expertFaculty": "विशेषज्ञ शिक्षक",
     "subjectSpecialistsMentors": "विषय विशेषज्ञ और मार्गदर्शक",
     "regularAssessment": "नियमित आकलन",
@@ -377,7 +382,7 @@
   },
   "whyVrr": {
     "integratedPreparation": "समेकित तैयारी",
-    "puBoardLearningAndCompetitiveExam": "PU बोर्ड की पढ़ाई और प्रतियोगी परीक्षा की तैयारी एक केंद्रित शैक्षणिक कार्यक्रम में।",
+    "puBoardLearningAndCompetitiveExam": "PU की पढ़ाई और JEE / NEET / KCET की तैयारी अलग-अलग ट्यूशन समय-सारणी के बजाय एक तालमेल वाले शैक्षणिक कार्यक्रम के रूप में नियोजित होती है।",
     "expertFaculty": "विशेषज्ञ शिक्षक",
     "subjectSpecialistsWhoSimplifyConceptsClear": "विषय विशेषज्ञ जो अवधारणाएँ सरल बनाते हैं, शंकाएँ दूर करते हैं और कठिन विषयों में मार्गदर्शन देते हैं।",
     "testingMentoring": "परीक्षा और मार्गदर्शन",

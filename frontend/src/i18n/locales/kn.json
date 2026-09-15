@@ -90,7 +90,8 @@
     "assessment": "ಮೌಲ್ಯಮಾಪನ",
     "select": "ಆಯ್ಕೆ",
     "admission": "ಪ್ರವೇಶ",
-    "startAdmissionEnquiry": "ಪ್ರವೇಶ ವಿಚಾರಣೆ ಆರಂಭಿಸಿ"
+    "startAdmissionEnquiry": "ಪ್ರವೇಶ ವಿಚಾರಣೆ ಆರಂಭಿಸಿ",
+    "integratedProgramme": "PU ಸಮಗ್ರ ಶೈಕ್ಷಣಿಕ ಕಾರ್ಯಕ್ರಮಕ್ಕೆ ಪ್ರವೇಶ"
   },
   "campusSection": {
     "classroom": "ತರಗತಿ ಕೊಠಡಿ",
@@ -230,7 +231,10 @@
     "chapterWiseTesting": "ಅಧ್ಯಾಯವಾರು ಪರೀಕ್ಷೆಗಳು",
     "expertFaculty": "ಪರಿಣತ ಉಪನ್ಯಾಸಕರು",
     "imageAlt": "ಕ್ಯಾಂಪಸ್ ಚಿತ್ರಗಳು ಶೀಘ್ರದಲ್ಲೇ ಲಭ್ಯ",
-    "imageTitle": "ಕಲಿಯಲು ಒಂದು ಸ್ಥಳ. ಬೆಳೆಯಲು ಒಂದು ದಾರಿ."
+    "imageTitle": "ಕಲಿಯಲು ಒಂದು ಸ್ಥಳ. ಬೆಳೆಯಲು ಒಂದು ದಾರಿ.",
+    "integratedProgramme": "PU ಸಮಗ್ರ ಶೈಕ್ಷಣಿಕ ಕಾರ್ಯಕ್ರಮ",
+    "associationCollege": "ಶಾಂತಿ ನಿಕೇತನ PU ಕಾಲೇಜು",
+    "integratedPathway": "ಕ್ಯಾಂಪಸ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಒಂದೇ ಶೈಕ್ಷಣಿಕ ದಾರಿ: PU ಶಿಕ್ಷಣ + JEE / NEET / KCET ತಯಾರಿ."
   },
   "learningSystem": {
     "concept": "ಪರಿಕಲ್ಪನೆ",
@@ -336,7 +340,8 @@
         "ಹಾರ್ಡ್‌ವೇರ್ ವ್ಯವಸ್ಥೆಗಳು"
       ],
       "bestFor": "ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್, ಹಾರ್ಡ್‌ವೇರ್, ಸರ್ಕ್ಯೂಟ್‌ಗಳು, ರೊಬೋಟಿಕ್ಸ್ ಮತ್ತು ಎಂಜಿನಿಯರಿಂಗ್ ವ್ಯವಸ್ಥೆಗಳಲ್ಲಿ ಆಸಕ್ತಿ ಇರುವ ವಿದ್ಯಾರ್ಥಿಗಳು."
-    }
+    },
+    "puCombinationContext": "ನಿಮ್ಮ PU ವಿಷಯ ಸಂಯೋಜನೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ, ಉನ್ನತ ಶಿಕ್ಷಣದ ಗುರಿಗಳಿಗೆ ಹೊಂದುವ ಸ್ಪರ್ಧಾತ್ಮಕ ಪರೀಕ್ಷೆಗಳಿಗೆ ತಯಾರಾಗಿ."
   },
   "resultsSection": {
     "selectedVrrAlumni2ndPuc2025": "VRR ಹಳೆಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಆಯ್ದ ಸಾಧನೆಗಳು • 2ನೇ PUC 2025",
@@ -366,8 +371,8 @@
     "regularAssessmentAndFacultyInteractionHelp": "ನಿಯಮಿತ ಮೌಲ್ಯಮಾಪನ ಮತ್ತು ಉಪನ್ಯಾಸಕರೊಂದಿಗಿನ ಸಂವಹನದಿಂದ ಪ್ರತಿ ವಿದ್ಯಾರ್ಥಿಯ ಪ್ರಗತಿ ಹಾಗೂ ಹೆಚ್ಚುವರಿ ನೆರವು ಬೇಕಾದ ಅಂಶಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುತ್ತೇವೆ."
   },
   "trustStrip": {
-    "integratedPreparation": "ಸಮಗ್ರ ತಯಾರಿ",
-    "puBoardsKcetJeeNeet": "PU ಬೋರ್ಡ್ + KCET / JEE / NEET",
+    "integratedPreparation": "PU + ಸ್ಪರ್ಧಾತ್ಮಕ ಪರೀಕ್ಷೆಗಳ ಸಮಗ್ರ ತಯಾರಿ",
+    "puBoardsKcetJeeNeet": "PU ಶಿಕ್ಷಣ + JEE / NEET / KCET ತಯಾರಿ",
     "expertFaculty": "ಪರಿಣತ ಉಪನ್ಯಾಸಕರು",
     "subjectSpecialistsMentors": "ವಿಷಯ ತಜ್ಞರು ಮತ್ತು ಮಾರ್ಗದರ್ಶಕರು",
     "regularAssessment": "ನಿಯಮಿತ ಮೌಲ್ಯಮಾಪನ",
@@ -377,7 +382,7 @@
   },
   "whyVrr": {
     "integratedPreparation": "ಸಮಗ್ರ ತಯಾರಿ",
-    "puBoardLearningAndCompetitiveExam": "PU ಬೋರ್ಡ್ ಕಲಿಕೆ ಮತ್ತು ಸ್ಪರ್ಧಾತ್ಮಕ ಪರೀಕ್ಷಾ ತಯಾರಿ ಒಂದೇ ಕೇಂದ್ರೀಕೃತ ಶೈಕ್ಷಣಿಕ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ.",
+    "puBoardLearningAndCompetitiveExam": "PU ಶಿಕ್ಷಣ ಮತ್ತು JEE / NEET / KCET ತಯಾರಿಯನ್ನು ಪ್ರತ್ಯೇಕ ಟ್ಯೂಷನ್ ವೇಳಾಪಟ್ಟಿಗಳ ಬದಲು ಒಂದೇ ಸಮನ್ವಯಗೊಂಡ ಶೈಕ್ಷಣಿಕ ಕಾರ್ಯಕ್ರಮವಾಗಿ ಯೋಜಿಸಲಾಗುತ್ತದೆ.",
     "expertFaculty": "ಪರಿಣತ ಉಪನ್ಯಾಸಕರು",
     "subjectSpecialistsWhoSimplifyConceptsClear": "ಪರಿಕಲ್ಪನೆಗಳನ್ನು ಸರಳಗೊಳಿಸಿ, ಸಂದೇಹ ನಿವಾರಿಸಿ, ಕಠಿಣ ವಿಷಯಗಳಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಮಾರ್ಗದರ್ಶನ ನೀಡುವ ವಿಷಯ ತಜ್ಞರು.",
     "testingMentoring": "ಪರೀಕ್ಷೆ ಮತ್ತು ಮಾರ್ಗದರ್ಶನ",

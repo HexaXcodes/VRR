@@ -90,7 +90,8 @@
     "assessment": "Assessment",
     "select": "Select",
     "admission": "Admission",
-    "startAdmissionEnquiry": "Start Admission Enquiry"
+    "startAdmissionEnquiry": "Start Admission Enquiry",
+    "integratedProgramme": "Admissions for the PU Integrated Programme"
   },
   "campusSection": {
     "classroom": "Classroom",
@@ -230,7 +231,10 @@
     "chapterWiseTesting": "Chapter-wise Testing",
     "expertFaculty": "Expert Faculty",
     "imageAlt": "Campus photography coming soon",
-    "imageTitle": "A place to learn. A path to grow."
+    "imageTitle": "A place to learn. A path to grow.",
+    "integratedProgramme": "PU Integrated Programme",
+    "associationCollege": "Shanthi Niketan PU College",
+    "integratedPathway": "One campus-linked academic pathway: PU education + JEE / NEET / KCET preparation."
   },
   "learningSystem": {
     "concept": "Concept",
@@ -336,7 +340,8 @@
         "Hardware systems"
       ],
       "bestFor": "Students who enjoy electronics, hardware, circuits, robotics and engineering systems."
-    }
+    },
+    "puCombinationContext": "Choose your PU combination and prepare for the competitive examinations aligned with your higher-education goals."
   },
   "resultsSection": {
     "selectedVrrAlumni2ndPuc2025": "Selected VRR Alumni • 2nd PUC 2025",
@@ -366,8 +371,8 @@
     "regularAssessmentAndFacultyInteractionHelp": "Regular assessment and faculty interaction help us understand how each student is progressing and where additional support may be useful."
   },
   "trustStrip": {
-    "integratedPreparation": "Integrated Preparation",
-    "puBoardsKcetJeeNeet": "PU Boards + KCET / JEE / NEET",
+    "integratedPreparation": "PU + Competitive Integration",
+    "puBoardsKcetJeeNeet": "PU academics + JEE / NEET / KCET preparation",
     "expertFaculty": "Expert Faculty",
     "subjectSpecialistsMentors": "Subject specialists & mentors",
     "regularAssessment": "Regular Assessment",
@@ -377,7 +382,7 @@
   },
   "whyVrr": {
     "integratedPreparation": "Integrated Preparation",
-    "puBoardLearningAndCompetitiveExam": "PU Board learning and competitive-exam preparation brought together in one focused academic programme.",
+    "puBoardLearningAndCompetitiveExam": "PU academics and JEE / NEET / KCET preparation are planned as one coordinated academic programme rather than separate tuition schedules.",
     "expertFaculty": "Expert Faculty",
     "subjectSpecialistsWhoSimplifyConceptsClear": "Subject specialists who simplify concepts, clear doubts and guide students through challenging areas.",
     "testingMentoring": "Testing + Mentoring",

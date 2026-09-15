@@ -12,19 +12,26 @@ export default function HeroSection({ onVisit }) {
   }
   return <section id="home" className="hero-v2 page-container py-10 lg:py-16">
     <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
-      <div className="min-w-0 space-y-6 lg:col-span-7">
+      <div className="hero-copy min-w-0 space-y-5 lg:col-span-7">
         <div className="hero-admissions-badge inline-flex items-center gap-2 rounded-full border border-brand-gold/30 bg-brand-gold-light/30 px-3.5 py-1.5 text-[11px] font-bold tracking-wider text-brand-navy"><span className="hero-admissions-dot h-1.5 w-1.5 rounded-full bg-brand-gold" />{t('hero.admissionsOpen202728')}</div>
         <div>
           <h1 className="tracking-tight text-brand-navy">
             <span className="hero-heading block font-sans font-medium">{t('hero.puBoardsJeeNeetKcet')}</span>
             <span className="hero-statement mt-2 block font-serif font-bold not-italic text-brand-gold">{t('hero.oneFocusedAcademicSystem')}</span>
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-brand-muted sm:text-lg">{t('hero.integratedPuEducationDesignedAroundStrong')}</p>
+          <p className="hero-description mt-5 max-w-xl text-base leading-relaxed text-brand-muted sm:text-lg">{t('hero.integratedPuEducationDesignedAroundStrong')}</p>
         </div>
-        <div className="flex max-w-xl items-center gap-3 rounded-xl border border-brand-border bg-brand-neutral p-3 text-sm"><Icon name="cap" className="h-6 w-6 shrink-0 text-brand-gold" /><span>{t('hero.inAcademicAssociationWith')}<strong className="text-brand-navy">Shanthi Niketan PU College</strong></span></div>
-        <div className="flex flex-wrap items-center gap-2.5"><span className="text-[10px] font-bold uppercase tracking-wider text-brand-muted">{t('hero.programs')}</span>{['PCMB', 'PCMC', 'PCME'].map(stream => <a href="#pathways" key={stream} className="rounded-md border border-brand-border bg-white px-3 py-1 text-xs font-bold text-brand-navy hover:border-brand-gold">{stream}</a>)}<span className="text-xs text-brand-muted">{t('hero.bengaluruCampus')}</span></div>
-        <div className="flex flex-col gap-3 sm:flex-row"><a href="#fee-enquiry" className="btn-gold">{t('hero.getFeeStructure')}<Icon name="arrow" /></a><button type="button" onClick={() => onVisit()} className="btn-outline"><Icon name="calendar" />{t('hero.bookCampusVisit')}</button></div>
-        <p className="text-xs font-medium leading-relaxed text-brand-muted">{t('hero.limitedSeats')}<span className="mx-1">•</span>{t('hero.entranceAssessment')}<span className="mx-1">•</span>{t('hero.academicCounselling')}</p>
+        <div className="hero-association flex max-w-xl items-start gap-3 rounded-xl border border-brand-gold/40 border-l-[3px] bg-brand-neutral p-3 text-brand-navy">
+          <Icon name="cap" className="mt-0.5 h-6 w-6 shrink-0 text-brand-gold" />
+          <div className="min-w-0">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-brand-gold-hover">{t('hero.integratedProgramme')}</p>
+            <p className="mt-1 text-xs leading-relaxed">{t('hero.inAcademicAssociationWith')}<strong className="block text-base font-bold uppercase leading-snug">{t('hero.associationCollege')}</strong></p>
+            <p className="mt-2 text-[13px] leading-relaxed">{t('hero.integratedPathway')}</p>
+          </div>
+        </div>
+        <div className="hero-programmes flex flex-wrap items-center gap-2.5"><span className="text-[10px] font-bold uppercase tracking-wider text-brand-muted">{t('hero.programs')}</span>{['PCMB', 'PCMC', 'PCME'].map(stream => <a href="#pathways" key={stream} className="rounded-md border border-brand-border bg-white px-3 py-1 text-xs font-bold text-brand-navy hover:border-brand-gold">{stream}</a>)}<span className="text-xs text-brand-muted">{t('hero.bengaluruCampus')}</span></div>
+        <div className="hero-actions flex flex-col gap-3 sm:flex-row"><a href="#fee-enquiry" className="btn-gold">{t('hero.getFeeStructure')}<Icon name="arrow" /></a><button type="button" onClick={() => onVisit()} className="btn-outline"><Icon name="calendar" />{t('hero.bookCampusVisit')}</button></div>
+        <p className="hero-trust text-xs font-medium leading-relaxed text-brand-muted">{t('hero.limitedSeats')}<span className="mx-1">•</span>{t('hero.entranceAssessment')}<span className="mx-1">•</span>{t('hero.academicCounselling')}</p>
       </div>
       <div className="hero-media lg:col-span-5" onPointerMove={moveImage} onPointerLeave={event => { event.currentTarget.style.removeProperty('--image-x'); event.currentTarget.style.removeProperty('--image-y') }}>
         <div className="hero-media-index"><span>{t('hero.vrrBengaluru')}</span><span>{t('hero.01TheLearningEnvironment')}</span></div>

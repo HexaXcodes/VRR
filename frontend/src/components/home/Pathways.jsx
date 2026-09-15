@@ -12,6 +12,7 @@ export default function Pathways({ onCounselling, onExplore }) {
 ]
   return <section id="pathways" className="pathways-section section-space"><div className="page-container">
     <p className="eyebrow">{t('pathways.academicStreams')}</p><h2 className="section-heading mt-3">{t('pathways.chooseYourPathway')}</h2><p className="mt-3 text-brand-muted">{t('pathways.structuredCombinationsDesignedForYourAcademic')}</p>
+    <p className="mt-2 max-w-3xl text-sm leading-relaxed text-brand-navy">{t('pathways.puCombinationContext')}</p>
     <div className="pathway-panels mt-9">{pathways.map(item => <article key={item.stream} className="pathway-panel">
       <PathwayMotif stream={item.stream} />
       <div className="flex flex-wrap items-center justify-between gap-3"><span className="rounded bg-brand-gold-light px-2.5 py-1 text-xs font-bold text-brand-navy">{item.stream}</span><span className="text-[9px] font-bold uppercase tracking-wider text-brand-muted">{item.label}</span></div>
