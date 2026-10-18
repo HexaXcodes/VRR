@@ -95,6 +95,7 @@
   },
   "campusSection": {
     "classroom": "Classroom",
+    "computerLab": "Computer Lab",
     "physicsLab": "Physics Lab",
     "chemistryLab": "Chemistry Lab",
     "biologyLab": "Biology Lab",
@@ -110,7 +111,13 @@
     "puAcademicCampus": "PU Academic Campus",
     "viewLocation": "View Location",
     "confirmLocation": "Confirm Location",
-    "bookCampusVisit": "Book Campus Visit"
+    "bookCampusVisit": "Book Campus Visit",
+    "shanthiNiketanSlideshow": "Shanthi Niketan PU College Campus Slideshow",
+    "vrrBuilding": "Campus Building",
+    "vrrStudyClassroom": "Interactive Classroom",
+    "vrrLectureHall": "Faculty Podium & Lecture Hall",
+    "vrrEntrance": "Entrance & Reception",
+    "vrrAcademySlideshow": "VRR Career Academy Campus Slideshow"
   },
   "careerExplorer": {
     "medicine": "Medicine",
@@ -234,7 +241,11 @@
     "imageTitle": "A place to learn. A path to grow.",
     "integratedProgramme": "PU Integrated Programme",
     "associationCollege": "Shanthi Niketan PU College",
-    "integratedPathway": "One campus-linked academic pathway: PU education + JEE / NEET / KCET preparation."
+    "integratedPathway": "One campus-linked academic pathway: PU education + JEE / NEET / KCET preparation.",
+    "campusSlideshow": "VRR Career Academy campus photo slideshow",
+    "slideshowAlt1": "VRR Career Academy campus building facade with PU Science, JEE, NEET, and KCET admissions information",
+    "slideshowAlt2": "Associated Shanthi Nikethan PU College academic campus building and courtyard in Bengaluru",
+    "slideshowAlt3": "VRR Career Academy entrance and academic counseling center"
   },
   "learningSystem": {
     "concept": "Concept",
@@ -355,7 +366,18 @@
     "2025AlumniResults": "2025 Alumni Results",
     "theSelectedAlumniResultGraphicWill": "The selected alumni result graphic will be added here.",
     "vrrCareerAcademy": "VRR CAREER ACADEMY ",
-    "2ndPuc2025": "2ND PUC / 2025"
+    "2ndPuc2025": "2ND PUC / 2025",
+    "resultsSlideshow": "VRR Academy Alumni Academic Achievements Slideshow",
+    "slide1Result": "JEE 98 Percentile",
+    "slide1Alt": "VRR Academy alumni Pratham Raj Urs - JEE 98 percentile",
+    "slide2Result": "10th ICSE 96%",
+    "slide2Alt": "VRR Academy student - 10th ICSE 96 percent",
+    "slide3Result": "KCET Rank 6547",
+    "slide3Alt": "VRR Academy student - KCET Rank 6547",
+    "slide4Result": "10th CBSE 99.12%",
+    "slide4Alt": "VRR Academy student - 10th CBSE 99.12 percent",
+    "slide5Result": "12th PU 98% • 10th CBSE 99%",
+    "slide5Alt": "VRR Academy student - 98 percent in 12th PU and 99 percent in 10th CBSE"
   },
   "learnerSupport": {
     "understand": "Understand",

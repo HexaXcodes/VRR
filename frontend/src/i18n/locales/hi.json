@@ -95,12 +95,13 @@
   },
   "campusSection": {
     "classroom": "कक्षा",
-    "physicsLab": "भौतिकी प्रयोगशाला",
-    "chemistryLab": "रसायन विज्ञान प्रयोगशाला",
-    "biologyLab": "जीव विज्ञान प्रयोगशाला",
+    "computerLab": "कंप्यूटर लैब",
+    "physicsLab": "भौतिक विज्ञान लैब",
+    "chemistryLab": "रसायन विज्ञान लैब",
+    "biologyLab": "जीव विज्ञान लैब",
     "campus": "कैंपस",
     "puAcademicCampusAssociatedWithThe": "समेकित कार्यक्रम से जुड़ा PU शैक्षणिक कैंपस।",
-    "integratedAcademicAndCompetitiveExamLearning": "पढ़ाई और प्रतियोगी परीक्षाओं की तैयारी का समेकित केंद्र।",
+    "integratedAcademicAndCompetitiveExamLearning": "समेकित शैक्षणिक और प्रतियोगी परीक्षा अध्ययन केंद्र।",
     "learnPracticeGrow": "सीखें। अभ्यास करें। आगे बढ़ें।",
     "bengaluruCampus": "बेंगलुरु कैंपस",
     "exploreOurLearningEnvironment": "हमारे सीखने के माहौल को जानें",
@@ -110,7 +111,13 @@
     "puAcademicCampus": "PU शैक्षणिक कैंपस",
     "viewLocation": "स्थान देखें",
     "confirmLocation": "स्थान की पुष्टि करें",
-    "bookCampusVisit": "कैंपस विज़िट बुक करें"
+    "bookCampusVisit": "कैंपस विज़िट बुक करें",
+    "shanthiNiketanSlideshow": "शांति निकेतन PU कॉलेज कैंपस स्लाइडशो",
+    "vrrBuilding": "कैंपस भवन",
+    "vrrStudyClassroom": "इंटरएक्टिव क्लासरूम",
+    "vrrLectureHall": "संकाय पोडियम और व्याख्यान कक्ष",
+    "vrrEntrance": "प्रवेश द्वार और स्वागत कक्ष",
+    "vrrAcademySlideshow": "वीआरआर करियर अकादमी कैंपस स्लाइडशो"
   },
   "careerExplorer": {
     "medicine": "चिकित्सा",
@@ -234,7 +241,11 @@
     "imageTitle": "सीखने की जगह। आगे बढ़ने की राह।",
     "integratedProgramme": "PU समेकित शैक्षणिक कार्यक्रम",
     "associationCollege": "शांति निकेतन PU कॉलेज",
-    "integratedPathway": "कैंपस से जुड़ी एक शैक्षणिक राह: PU शिक्षा + JEE / NEET / KCET की तैयारी।"
+    "integratedPathway": "कैंपस से जुड़ी एक शैक्षणिक राह: PU शिक्षा + JEE / NEET / KCET की तैयारी।",
+    "campusSlideshow": "VRR Career Academy कैंपस फोटो स्लाइडशो",
+    "slideshowAlt1": "PU Science, JEE, NEET और KCET प्रवेश जानकारी दर्शाने वाला VRR Career Academy कैंपस भवन",
+    "slideshowAlt2": "बेंगलुरु में संबद्ध शांति निकेतन PU कॉलेज शैक्षणिक कैंपस भवन और प्रांगण",
+    "slideshowAlt3": "VRR Career Academy प्रवेश द्वार और शैक्षणिक परामर्श केंद्र"
   },
   "learningSystem": {
     "concept": "अवधारणा",
@@ -355,7 +366,18 @@
     "2025AlumniResults": "2025 पूर्व विद्यार्थियों के परिणाम",
     "theSelectedAlumniResultGraphicWill": "पूर्व विद्यार्थियों के चुनिंदा परिणामों का चित्र यहाँ जोड़ा जाएगा।",
     "vrrCareerAcademy": "VRR CAREER ACADEMY ",
-    "2ndPuc2025": "द्वितीय PUC / 2025"
+    "2ndPuc2025": "द्वितीय PUC / 2025",
+    "resultsSlideshow": "VRR Academy पूर्व छात्र शैक्षणिक उपलब्धियाँ स्लाइडशो",
+    "slide1Result": "JEE 98 Percentile",
+    "slide1Alt": "VRR Academy पूर्व छात्र प्रथम राज उर्स - JEE 98 percentile",
+    "slide2Result": "10th ICSE 96%",
+    "slide2Alt": "VRR Academy छात्र - 10th ICSE 96 प्रतिशत",
+    "slide3Result": "KCET Rank 6547",
+    "slide3Alt": "VRR Academy छात्र - KCET Rank 6547",
+    "slide4Result": "10th CBSE 99.12%",
+    "slide4Alt": "VRR Academy छात्र - 10th CBSE 99.12 प्रतिशत",
+    "slide5Result": "12th PU 98% • 10th CBSE 99%",
+    "slide5Alt": "VRR Academy छात्रा - 12th PU में 98 प्रतिशत और 10th CBSE में 99 प्रतिशत"
   },
   "learnerSupport": {
     "understand": "समझें",

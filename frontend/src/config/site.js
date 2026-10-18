@@ -10,10 +10,138 @@ export const site = {
   mapsUrl: 'https://maps.google.com/?q=2nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli+-+Thindlu+Main+Road,+Near+SVVK+School,+Sahakar+Nagar,+Kodigehalli,+Bangalore,+Karnataka+560092',
   collegeMapsUrl: null,
   logo: '/VRR1.jpeg',
-  // TODO: Replace this neutral local placeholder with a real, approved VRR classroom image.
-  heroImage: '/images/campus-placeholder.svg',
-  heroImageAlt: 'Campus photography coming soon',
-  resultsImage: null, // Set to '/images/results/2025-results.jpg' after confirming the year and graphic.
+  heroImage: '/images/vrr-academy-building.jpg',
+  heroImageAlt: 'VRR Career Academy campus building facade with PU Science, JEE, NEET, and KCET admissions information',
+  heroSlides: [
+    {
+      src: '/images/vrr-academy-building.jpg',
+      alt: 'VRR Career Academy campus building facade with PU Science, JEE, NEET, and KCET admissions information',
+      i18nKey: 'hero.slideshowAlt1',
+    },
+    {
+      src: '/images/shanthi-nikethan-campus.jpg',
+      alt: 'Associated Shanthi Nikethana PU College academic campus building and courtyard in Bengaluru',
+      i18nKey: 'hero.slideshowAlt2',
+    },
+    {
+      src: '/images/vrr-academy-entrance.jpg',
+      alt: 'VRR Career Academy entrance and academic counseling center',
+      i18nKey: 'hero.slideshowAlt3',
+    },
+  ],
+  resultsImage: '/images/results/alumni-jee-98-percentile.jpg',
+  resultsSlides: [
+    {
+      src: '/images/results/alumni-jee-98-percentile.jpg',
+      studentName: 'Pratham Raj Urs',
+      result: 'JEE 98 Percentile',
+      alt: 'VRR Academy alumni Pratham Raj Urs - JEE 98 percentile',
+      i18nKey: 'resultsSection.slide1Alt',
+      i18nResultKey: 'resultsSection.slide1Result',
+    },
+    {
+      src: '/images/results/alumni-10th-icse-96-percent.jpg',
+      studentName: 'VRR Academy Student',
+      result: '10th ICSE 96%',
+      alt: 'VRR Academy student - 10th ICSE 96 percent',
+      i18nKey: 'resultsSection.slide2Alt',
+      i18nResultKey: 'resultsSection.slide2Result',
+    },
+    {
+      src: '/images/results/alumni-kcet-6547-rank.jpg',
+      studentName: 'VRR Academy Student',
+      result: 'KCET Rank 6547',
+      alt: 'VRR Academy student - KCET Rank 6547',
+      i18nKey: 'resultsSection.slide3Alt',
+      i18nResultKey: 'resultsSection.slide3Result',
+    },
+    {
+      src: '/images/results/alumni-10th-cbse-99-percent.jpg',
+      studentName: 'VRR Academy Student',
+      result: '10th CBSE 99.12%',
+      alt: 'VRR Academy student - 10th CBSE 99.12 percent',
+      i18nKey: 'resultsSection.slide4Alt',
+      i18nResultKey: 'resultsSection.slide4Result',
+    },
+    {
+      src: '/images/results/alumni-12th-pu-98-10th-cbse-99.jpg',
+      studentName: 'VRR Academy Student',
+      result: '12th PU 98% • 10th CBSE 99%',
+      alt: 'VRR Academy student - 98 percent in 12th PU and 99 percent in 10th CBSE',
+      i18nKey: 'resultsSection.slide5Alt',
+      i18nResultKey: 'resultsSection.slide5Result',
+    },
+  ],
+  shanthiNiketanSlides: [
+    {
+      src: '/images/campus/shanthi-niketan-classroom.jpg',
+      label: 'Classroom',
+      i18nKey: 'campusSection.classroom',
+      alt: 'Shanthi Niketan PU College classroom with student lecture desks and chalkboard',
+    },
+    {
+      src: '/images/campus/shanthi-niketan-computer-lab.jpg',
+      label: 'Computer Lab',
+      i18nKey: 'campusSection.computerLab',
+      alt: 'Shanthi Niketan PU College computer lab with student desktop workstations',
+    },
+    {
+      src: '/images/campus/shanthi-niketan-physics-biology-lab.jpg',
+      label: 'Physics Lab',
+      i18nKey: 'campusSection.physicsLab',
+      alt: 'Shanthi Niketan PU College physics lab equipment and apparatus',
+    },
+    {
+      src: '/images/campus/shanthi-niketan-chemistry-lab.jpg',
+      label: 'Chemistry Lab',
+      i18nKey: 'campusSection.chemistryLab',
+      alt: 'Shanthi Niketan PU College chemistry lab with glassware and apparatus',
+    },
+    {
+      src: '/images/campus/shanthi-niketan-biology-lab.jpg',
+      label: 'Biology Lab',
+      i18nKey: 'campusSection.biologyLab',
+      alt: 'Shanthi Niketan PU College biology lab with anatomical teaching models',
+    },
+    {
+      src: '/images/campus/shanthi-niketan-campus-building.jpg',
+      label: 'Campus',
+      i18nKey: 'campusSection.campus',
+      alt: 'Shanthi Niketan PU College academic campus building and courtyard',
+    },
+  ],
+  vrrAcademySlides: [
+    {
+      src: '/images/campus/vrr-academy-building-facade.jpg',
+      label: 'Campus Building',
+      i18nKey: 'campusSection.vrrBuilding',
+      alt: 'VRR Career Academy campus building facade with PU Science, JEE, NEET, and KCET admissions information',
+    },
+    {
+      src: '/images/campus/vrr-academy-classroom-lecture-hall.jpg',
+      label: 'Classroom',
+      i18nKey: 'campusSection.classroom',
+      alt: 'VRR Career Academy classroom with student lecture desks and chalkboard',
+    },
+    {
+      src: '/images/campus/vrr-academy-study-classroom.jpg',
+      label: 'Interactive Classroom',
+      i18nKey: 'campusSection.vrrStudyClassroom',
+      alt: 'VRR Career Academy interactive classroom with modern seating and study area',
+    },
+    {
+      src: '/images/campus/vrr-academy-podium-classroom.jpg',
+      label: 'Faculty Podium & Lecture Hall',
+      i18nKey: 'campusSection.vrrLectureHall',
+      alt: 'VRR Career Academy faculty lecture podium and student seating with curriculum materials',
+    },
+    {
+      src: '/images/campus/vrr-academy-entrance-reception.jpg',
+      label: 'Entrance & Reception',
+      i18nKey: 'campusSection.vrrEntrance',
+      alt: 'VRR Career Academy entrance reception door with official branding',
+    },
+  ],
 }
 export const navigation = [
   ['Programs', 'pathways'], ['Academics', 'learning-system'], ['Faculty', 'faculty'],

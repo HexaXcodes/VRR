@@ -95,12 +95,13 @@
   },
   "campusSection": {
     "classroom": "ತರಗತಿ ಕೊಠಡಿ",
-    "physicsLab": "ಭೌತಶಾಸ್ತ್ರ ಪ್ರಯೋಗಾಲಯ",
-    "chemistryLab": "ರಸಾಯನಶಾಸ್ತ್ರ ಪ್ರಯೋಗಾಲಯ",
-    "biologyLab": "ಜೀವಶಾಸ್ತ್ರ ಪ್ರಯೋಗಾಲಯ",
+    "computerLab": "ಕಂಪ್ಯೂಟರ್ ಲ್ಯಾಬ್",
+    "physicsLab": "ಭೌತಶಾಸ್ತ್ರ ಲ್ಯಾಬ್",
+    "chemistryLab": "ರಸಾಯನಶಾಸ್ತ್ರ ಲ್ಯಾಬ್",
+    "biologyLab": "ಜೀವಶಾಸ್ತ್ರ ಲ್ಯಾಬ್",
     "campus": "ಕ್ಯಾಂಪಸ್",
-    "puAcademicCampusAssociatedWithThe": "ಸಮಗ್ರ ಕಾರ್ಯಕ್ರಮಕ್ಕೆ ಸಂಬಂಧಿಸಿದ PU ಶೈಕ್ಷಣಿಕ ಕ್ಯಾಂಪಸ್.",
-    "integratedAcademicAndCompetitiveExamLearning": "ಶೈಕ್ಷಣಿಕ ಮತ್ತು ಸ್ಪರ್ಧಾತ್ಮಕ ಪರೀಕ್ಷಾ ತಯಾರಿಯ ಸಮಗ್ರ ಕಲಿಕಾ ಕೇಂದ್ರ.",
+    "puAcademicCampusAssociatedWithThe": "ಸಂಯೋಜಿತ ಕಾರ್ಯಕ್ರಮದೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದ PU ಶೈಕ್ಷಣಿಕ ಕ್ಯಾಂಪಸ್.",
+    "integratedAcademicAndCompetitiveExamLearning": "ಸಮಗ್ರ ಶೈಕ್ಷಣಿಕ ಮತ್ತು ಸ್ಪರ್ಧಾತ್ಮಕ ಪರೀಕ್ಷಾ ಕಲಿಕಾ ಕೇಂದ್ರ.",
     "learnPracticeGrow": "ಕಲಿಯಿರಿ. ಅಭ್ಯಾಸ ಮಾಡಿ. ಬೆಳೆಯಿರಿ.",
     "bengaluruCampus": "ಬೆಂಗಳೂರು ಕ್ಯಾಂಪಸ್",
     "exploreOurLearningEnvironment": "ನಮ್ಮ ಕಲಿಕೆಯ ವಾತಾವರಣವನ್ನು ಪರಿಚಯಿಸಿಕೊಳ್ಳಿ",
@@ -110,7 +111,13 @@
     "puAcademicCampus": "PU ಶೈಕ್ಷಣಿಕ ಕ್ಯಾಂಪಸ್",
     "viewLocation": "ಸ್ಥಳ ನೋಡಿ",
     "confirmLocation": "ಸ್ಥಳ ಖಚಿತಪಡಿಸಿ",
-    "bookCampusVisit": "ಕ್ಯಾಂಪಸ್ ಭೇಟಿಗೆ ಸಮಯ ಕಾಯ್ದಿರಿಸಿ"
+    "bookCampusVisit": "ಕ್ಯಾಂಪಸ್ ಭೇಟಿಗೆ ಸಮಯ ಕಾಯ್ದಿರಿಸಿ",
+    "shanthiNiketanSlideshow": "ಶಾಂತಿ ನಿಕೇತನ PU ಕಾಲೇಜು ಕ್ಯಾಂಪಸ್ ಸ್ಲೈಡ್‌ಶೋ",
+    "vrrBuilding": "ಕ್ಯಾಂಪಸ್ ಕಟ್ಟಡ",
+    "vrrStudyClassroom": "ಸಂವಾದಾತ್ಮಕ ತರಗತಿ ಕೊಠಡಿ",
+    "vrrLectureHall": "ಅಧ್ಯಾಪಕರ ವೇದಿಕೆ ಮತ್ತು ಉಪನ್ಯಾಸ ಸಭಾಂಗಣ",
+    "vrrEntrance": "ಪ್ರವೇಶದ್ವಾರ ಮತ್ತು ಸ್ವಾಗತ ಕೇಂದ್ರ",
+    "vrrAcademySlideshow": "ವಿಆರ್‌ಆರ್ ಕೆರಿಯರ್ ಅಕಾಡೆಮಿ ಕ್ಯಾಂಪಸ್ ಸ್ಲೈಡ್‌ಶೋ"
   },
   "careerExplorer": {
     "medicine": "ವೈದ್ಯಕೀಯ",
@@ -234,7 +241,11 @@
     "imageTitle": "ಕಲಿಯಲು ಒಂದು ಸ್ಥಳ. ಬೆಳೆಯಲು ಒಂದು ದಾರಿ.",
     "integratedProgramme": "PU ಸಮಗ್ರ ಶೈಕ್ಷಣಿಕ ಕಾರ್ಯಕ್ರಮ",
     "associationCollege": "ಶಾಂತಿ ನಿಕೇತನ PU ಕಾಲೇಜು",
-    "integratedPathway": "ಕ್ಯಾಂಪಸ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಒಂದೇ ಶೈಕ್ಷಣಿಕ ದಾರಿ: PU ಶಿಕ್ಷಣ + JEE / NEET / KCET ತಯಾರಿ."
+    "integratedPathway": "ಕ್ಯಾಂಪಸ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಒಂದೇ ಶೈಕ್ಷಣಿಕ ದಾರಿ: PU ಶಿಕ್ಷಣ + JEE / NEET / KCET ತಯಾರಿ.",
+    "campusSlideshow": "VRR Career Academy ಕ್ಯಾಂಪಸ್ ಫೋಟೋ ಸ್ಲೈಡ್‌ಶೋ",
+    "slideshowAlt1": "PU Science, JEE, NEET ಮತ್ತು KCET ಪ್ರವೇಶ ಮಾಹಿತಿ ಹೊಂದಿರುವ VRR Career Academy ಕ್ಯಾಂಪಸ್ ಕಟ್ಟಡ ಮುಂಭಾಗ",
+    "slideshowAlt2": "ಬೆಂಗಳೂರಿನಲ್ಲಿ ಸಂಯೋಜಿತ Shanthi Nikethan PU College ಶೈಕ್ಷಣಿಕ ಕ್ಯಾಂಪಸ್ ಕಟ್ಟಡ ಮತ್ತು ಆವರಣ",
+    "slideshowAlt3": "VRR Career Academy ಪ್ರವೇಶದ್ವಾರ ಮತ್ತು ಶೈಕ್ಷಣಿಕ ಸಮಾಲೋಚನೆ ಕೇಂದ್ರ"
   },
   "learningSystem": {
     "concept": "ಪರಿಕಲ್ಪನೆ",
@@ -355,7 +366,18 @@
     "2025AlumniResults": "2025 ಹಳೆಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಫಲಿತಾಂಶಗಳು",
     "theSelectedAlumniResultGraphicWill": "ಆಯ್ದ ಹಳೆಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಫಲಿತಾಂಶದ ಚಿತ್ರವನ್ನು ಇಲ್ಲಿ ಸೇರಿಸಲಾಗುವುದು.",
     "vrrCareerAcademy": "VRR CAREER ACADEMY ",
-    "2ndPuc2025": "2ನೇ PUC / 2025"
+    "2ndPuc2025": "2ನೇ PUC / 2025",
+    "resultsSlideshow": "VRR Academy ಹಳೆಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಶೈಕ್ಷಣಿಕ ಸಾಧನೆಗಳ ಸ್ಲೈಡ್‌ಶೋ",
+    "slide1Result": "JEE 98 Percentile",
+    "slide1Alt": "VRR Academy ಹಳೆಯ ವಿದ್ಯಾರ್ಥಿ Pratham Raj Urs - JEE 98 percentile ಸಾಧನೆ",
+    "slide2Result": "10th ICSE 96%",
+    "slide2Alt": "VRR Academy ವಿದ್ಯಾರ್ಥಿ - 10th ICSE 96 ಶೇಕಡಾ",
+    "slide3Result": "KCET Rank 6547",
+    "slide3Alt": "VRR Academy ವಿದ್ಯಾರ್ಥಿ - KCET Rank 6547",
+    "slide4Result": "10th CBSE 99.12%",
+    "slide4Alt": "VRR Academy ವಿದ್ಯಾರ್ಥಿ - 10th CBSE 99.12 ಶೇಕಡಾ",
+    "slide5Result": "12th PU 98% • 10th CBSE 99%",
+    "slide5Alt": "VRR Academy ವಿದ್ಯಾರ್ಥಿ - 12th PU 98% ಮತ್ತು 10th CBSE 99%"
   },
   "learnerSupport": {
     "understand": "ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ",

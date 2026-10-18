@@ -1,8 +1,61 @@
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import Icon from '../Icon'
 import { site } from '../../config/site'
+
 export default function HeroSection({ onVisit }) {
   const { t } = useTranslation()
+  const slides = site.heroSlides || [{ src: site.heroImage, alt: site.heroImageAlt }]
+
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [prevIndex, setPrevIndex] = useState(null)
+  const [failedSources, setFailedSources] = useState({})
+  const [isReducedMotion, setIsReducedMotion] = useState(false)
+
+  // Preload slideshow images for seamless transitions
+  useEffect(() => {
+    slides.forEach(slide => {
+      if (slide?.src) {
+        const img = new Image()
+        img.src = slide.src
+      }
+    })
+  }, [slides])
+
+  // Listen for prefers-reduced-motion preference changes
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+    setIsReducedMotion(mediaQuery.matches)
+
+    const onChange = e => setIsReducedMotion(e.matches)
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener('change', onChange)
+      return () => mediaQuery.removeEventListener('change', onChange)
+    } else if (mediaQuery.addListener) {
+      mediaQuery.addListener(onChange)
+      return () => mediaQuery.removeListener(onChange)
+    }
+  }, [])
+
+  // Auto-advance every 2 seconds, looping infinitely from last to first
+  useEffect(() => {
+    if (isReducedMotion || slides.length <= 1) return
+
+    const timer = setInterval(() => {
+      if (typeof document !== 'undefined' && document.hidden) return
+      setCurrentIndex(prev => {
+        setPrevIndex(prev)
+        return (prev + 1) % slides.length
+      })
+    }, 2000)
+
+    return () => clearInterval(timer)
+  }, [isReducedMotion, slides.length])
+
+  const handleImageError = source => {
+    setFailedSources(prev => ({ ...prev, [source]: true }))
+  }
 
   const moveImage = event => {
     if (!window.matchMedia('(min-width: 1024px) and (hover: hover) and (prefers-reduced-motion: no-preference)').matches) return
@@ -10,6 +63,20 @@ export default function HeroSection({ onVisit }) {
     event.currentTarget.style.setProperty('--image-x', `${((event.clientX - rect.left) / rect.width - .5) * 8}px`)
     event.currentTarget.style.setProperty('--image-y', `${((event.clientY - rect.top) / rect.height - .5) * 8}px`)
   }
+
+  const currentSlide = slides[currentIndex] || slides[0]
+  const currentFailed = failedSources[currentSlide?.src]
+  const currentSrc = currentFailed ? '/images/campus-placeholder.svg' : (currentSlide?.src || site.heroImage)
+  const currentAlt = currentFailed
+    ? t('hero.imageAlt')
+    : (currentSlide?.i18nKey ? t(currentSlide.i18nKey) : (currentSlide?.alt || site.heroImageAlt))
+
+  const prevSlide = prevIndex !== null ? (slides[prevIndex] || null) : null
+  const prevFailed = prevSlide ? failedSources[prevSlide.src] : false
+  const prevSrc = prevSlide ? (prevFailed ? '/images/campus-placeholder.svg' : prevSlide.src) : null
+
+  const isCurrentPlaceholder = currentSrc === '/images/campus-placeholder.svg'
+
   return <section id="home" className="hero-v2 page-container py-10 lg:py-16">
     <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
       <div className="hero-copy min-w-0 space-y-5 lg:col-span-7">
@@ -35,10 +102,35 @@ export default function HeroSection({ onVisit }) {
       </div>
       <div className="hero-media lg:col-span-5" onPointerMove={moveImage} onPointerLeave={event => { event.currentTarget.style.removeProperty('--image-x'); event.currentTarget.style.removeProperty('--image-y') }}>
         <div className="hero-media-index"><span>{t('hero.vrrBengaluru')}</span><span>{t('hero.01TheLearningEnvironment')}</span></div>
-        <div className="hero-image-frame">
-        <img src={site.heroImage} alt={site.heroImage === '/images/campus-placeholder.svg' ? t('hero.imageAlt') : site.heroImageAlt} width="800" height="760" loading="eager" className="aspect-[4/3] w-full object-cover lg:aspect-auto lg:h-[460px]" />
-        {site.heroImage === '/images/campus-placeholder.svg' && <div className="hero-placeholder-copy"><p>{t('hero.imageTitle')}</p><span>{t('hero.imageAlt')}</span></div>}
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-navy/50 via-transparent to-transparent" />
+        <div className="hero-image-frame" role="region" aria-roledescription="carousel" aria-label={t('hero.campusSlideshow')}>
+          {prevSrc && prevSrc !== currentSrc && (
+            <div className="hero-slide-underlay pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+              <img
+                src={prevSrc}
+                alt=""
+                width="800"
+                height="760"
+                className="aspect-[4/3] w-full h-full object-cover lg:aspect-auto lg:h-[460px]"
+              />
+            </div>
+          )}
+          <img
+            key={currentSrc}
+            src={currentSrc}
+            alt={currentAlt}
+            width="800"
+            height="760"
+            loading="eager"
+            onError={() => handleImageError(currentSlide.src)}
+            className={`${prevIndex !== null ? 'hero-slide-fade ' : ''}relative aspect-[4/3] w-full object-cover lg:aspect-auto lg:h-[460px]`}
+          />
+          {isCurrentPlaceholder && (
+            <div className="hero-placeholder-copy">
+              <p>{t('hero.imageTitle')}</p>
+              <span>{t('hero.imageAlt')}</span>
+            </div>
+          )}
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-navy/50 via-transparent to-transparent" />
         </div>
         <div className="hero-academic-badges">{[['check', t('hero.chapterWiseTesting')], ['people', t('hero.expertFaculty')]].map(([icon, label]) => <div key={label} className="flex items-center gap-2 rounded-xl border border-brand-border bg-white/95 px-3 py-2.5 text-[11px] font-bold text-brand-navy shadow-sm"><Icon name={icon} className="h-4 w-4 text-brand-gold" />{label}</div>)}</div>
       </div>
