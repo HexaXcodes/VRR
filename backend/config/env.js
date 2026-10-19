@@ -18,6 +18,11 @@ function readEnv() {
   if (process.env.NODE_ENV === 'production') {
     for (const key of ['MONGODB_URI', 'FRONTEND_URL']) if (!process.env[key]) throw new Error(`${key} is required in production`)
   }
+  const sheetsConfig = ['GOOGLE_SERVICE_ACCOUNT_EMAIL', 'GOOGLE_PRIVATE_KEY', 'GOOGLE_SHEET_ID']
+  const configuredSheetsValues = sheetsConfig.filter(key => process.env[key])
+  if (configuredSheetsValues.length > 0 && configuredSheetsValues.length < sheetsConfig.length) {
+    throw new Error('Google Sheets requires GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_PRIVATE_KEY, and GOOGLE_SHEET_ID together')
+  }
   const origins = (process.env.FRONTEND_URL || 'http://localhost:5173').split(',').map(v => v.trim())
   for (const origin of origins) {
     const url = new URL(origin)

@@ -2,9 +2,16 @@ import Lead from '../models/Lead.js'
 import { createLead, findLead, updateLead } from '../services/leadService.js'
 import { sendSuccess } from '../utils/response.js'
 import { ApiError } from '../utils/errors.js'
+import { appendLeadToGoogleSheet, isGoogleSheetsConfigured } from '../services/googleSheetsService.js'
+import { logger } from '../utils/logger.js'
 
 export async function submitLead(req, res) {
   const lead = await createLead(req.body)
+  if (isGoogleSheetsConfigured()) {
+    void appendLeadToGoogleSheet(lead.toObject()).catch(error => {
+      logger.error(`Google Sheets sync failed for lead ${lead.id}`, error.message)
+    })
+  }
   sendSuccess(res, { _id: lead.id, studentName: lead.studentName, requestType: lead.requestType, createdAt: lead.createdAt }, 'Enquiry submitted successfully', 201)
 }
 export async function listLeads(req, res) {

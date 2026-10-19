@@ -29,6 +29,23 @@ Start the existing frontend from `frontend` with `npm install` then `npm run dev
 | JWT_EXPIRES_IN | Positive duration with unit s/m/h/d, default `8h` |
 | ADMIN_NAME / ADMIN_EMAIL / ADMIN_PASSWORD | Operator-only bootstrap/reset script inputs |
 | TRUST_PROXY | Exact trusted reverse-proxy hop count; default 0 (direct connection) |
+| GOOGLE_SERVICE_ACCOUNT_EMAIL | Optional service account email used to append submissions to Google Sheets |
+| GOOGLE_PRIVATE_KEY | Optional service account private key; keep secret and store only in Render environment variables |
+| GOOGLE_SHEET_ID | Optional spreadsheet ID from its URL; enables Sheets sync when set with the email and private key |
+| GOOGLE_SHEET_TAB | Optional worksheet tab name; defaults to `Leads` |
+
+## Google Sheets lead sync
+
+To enable automatic copies of new submissions:
+
+1. In Google Cloud Console, enable the Google Sheets API and create a service account with a JSON key.
+2. Create a Google spreadsheet and a worksheet tab named `Leads` (or set `GOOGLE_SHEET_TAB` to another tab name).
+3. Share the spreadsheet with the service account's `client_email` and give it Editor access. The service account does not need access to the submitter's Google account.
+4. Add `GOOGLE_SERVICE_ACCOUNT_EMAIL`, `GOOGLE_PRIVATE_KEY`, and `GOOGLE_SHEET_ID` to the Render service environment. Use the `client_email` and `private_key` from the JSON key, and the spreadsheet ID from the URL between `/d/` and `/edit`. Keep the private key secret; if storing it with literal `\\n` separators, the service converts those to line breaks.
+5. Redeploy the Render service.
+6. Add this header row to row 1 of the worksheet, in order: `Lead ID`, `Submitted At`, `Student Name`, `Parent Name`, `Phone`, `WhatsApp`, `Email`, `Request Type`, `Current Class`, `Board`, `Interested Stream`, `Target Exam`, `Preferred Campus`, `School`, `Preferred Contact Time`, `Message`, `Status`, `Lead Source`, `Campus Visit Requested`, `Preferred Visit Date`, `Visit Time Slot`, `Counselling Requested`.
+
+New leads are first saved to MongoDB, then copied to Sheets in the background so a slow Sheets request does not delay the website form. If Sheets sync fails, the MongoDB lead is retained and the Render log records the sync error. Review Render logs and retry/copy that lead if a Google permission or API error occurs. The integration is disabled until all three required service-account variables are configured.
 
 Use HTTPS in production. Configure TRUST_PROXY to match the actual deployment; do not blindly trust forwarded IP headers. Limits use process memory: Phase 1 assumes one API instance. Multiple instances require a shared rate-limit store or gateway limit. CORS permits requests without Origin for non-browser clients; authentication still protects internal routes.
 
