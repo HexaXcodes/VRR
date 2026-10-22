@@ -45,7 +45,7 @@ Forms prevent duplicate in-flight submission, disable controls during submission
 - `src/config/site.js`: replace heroImage/heroImageAlt with approved VRR classroom photography. Current local SVG is explicitly a neutral placeholder.
 - Set resultsImage to `'/images/results/2025-results.jpg'` after verifying the graphic/year. The existing VRR2.jpeg was retained, but not assigned to 2025 without confirmation.
 - `src/components/home/CampusSection.jsx`: replace the gallery photo=null records with approved local photos for their labels. Current blocks explicitly say Photo coming soon and make no facility claims.
-- Set site.collegeMapsUrl after confirming the Shanthi Niketan location. Until then its card says Confirm Location and leads to the admissions contact section instead of an invented map.
+- `src/config/site.js` keeps separate address and Maps links for Shanthi Niketan PU College and VRR Career Academy; each campus card displays its own address and directions link.
 - Existing logo, phone, WhatsApp, email and VRR map/address are centralized in site.js. Google Fonts load Source Serif 4 and Plus Jakarta Sans; serif/system fallbacks are provided.
 
 ## Cleanup and limitations

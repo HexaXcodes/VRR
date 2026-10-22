@@ -1,4 +1,4 @@
-// Existing VRR contact details. Add the verified college map URL when supplied.
+// Separate locations for the associated PU college and VRR Academy campuses.
 export const site = {
   name: 'VRR Career Academy',
   phone: '+919611747003',
@@ -8,7 +8,8 @@ export const site = {
   email: 'vrr.career.academy@gmail.com',
   address: '2nd Floor, Vinayaka Complex, 11, Kodigehalli – Thindlu Main Road, Near SVVK School, Sahakar Nagar, Bengaluru, Karnataka 560092',
   mapsUrl: 'https://maps.google.com/?q=2nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli+-+Thindlu+Main+Road,+Near+SVVK+School,+Sahakar+Nagar,+Kodigehalli,+Bangalore,+Karnataka+560092',
-  collegeMapsUrl: null,
+  collegeAddress: 'Shantiniketan School, 2nd Main, Bhadrappa Layout, Kodigehalli Main Road, Maruti Nagar, Devinagar, Bengaluru, Karnataka 560094',
+  collegeMapsUrl: 'https://www.google.com/maps/place/Shantiniketan+School,+Bhadrappa+layout,+2nd+main,+bhadrappa+Layout,+Kodigehalli+Main+Rd,+Maruti+Nagar,+Devinagar,+Bengaluru,+Karnataka+560094/',
   logo: '/VRR1.jpeg',
   heroImage: '/images/vrr-academy-building.jpg',
   heroImageAlt: 'VRR Career Academy campus building facade with PU Science, JEE, NEET, and KCET admissions information',

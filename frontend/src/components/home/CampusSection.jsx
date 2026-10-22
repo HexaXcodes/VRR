@@ -15,12 +15,14 @@ export default function CampusSection({ onVisit }) {
     {
       name: 'Shanthi Niketan PU College',
       description: t('campusSection.puAcademicCampusAssociatedWithThe'),
+      address: site.collegeAddress,
       map: site.collegeMapsUrl,
       value: 'Shanthi Niketan',
     },
     {
       name: 'VRR Career Academy',
       description: t('campusSection.integratedAcademicAndCompetitiveExamLearning'),
+      address: site.address,
       map: site.mapsUrl,
       value: 'VRR Academy',
     },
@@ -213,6 +215,10 @@ export default function CampusSection({ onVisit }) {
                     {campus.name}
                   </h3>
                   <p className="mt-3 text-sm text-brand-muted">{campus.description}</p>
+                  <p className="mt-3 flex items-start gap-2 text-xs leading-relaxed text-brand-muted">
+                    <Icon name="pin" className="mt-0.5 h-4 w-4 shrink-0 text-brand-gold" />
+                    <span>{campus.address}</span>
+                  </p>
                 </button>
 
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
