@@ -9,7 +9,7 @@ export const site = {
   address: '2nd Floor, Vinayaka Complex, 11, Kodigehalli – Thindlu Main Road, Near SVVK School, Sahakar Nagar, Bengaluru, Karnataka 560092',
   mapsUrl: 'https://maps.google.com/?q=2nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli+-+Thindlu+Main+Road,+Near+SVVK+School,+Sahakar+Nagar,+Kodigehalli,+Bangalore,+Karnataka+560092',
   collegeAddress: 'Shantiniketan School, 2nd Main, Bhadrappa Layout, Kodigehalli Main Road, Maruti Nagar, Devinagar, Bengaluru, Karnataka 560094',
-  collegeMapsUrl: 'https://www.google.com/maps/place/Shantiniketan+School,+Bhadrappa+layout,+2nd+main,+bhadrappa+Layout,+Kodigehalli+Main+Rd,+Maruti+Nagar,+Devinagar,+Bengaluru,+Karnataka+560094/',
+  collegeMapsUrl: 'https://www.google.com/maps/place/Shantiniketan+School,+Bhadrappa+layout,+2nd+main,+bhadrappa+Layout,+Kodigehalli+Main+Rd,+Maruti+Nagar,+Devinagar,+Bengaluru,+Karnataka+560094/data=!4m2!3m1!1s0x3bae1754aa403e71:0x584c7db080a97cca!18m1!1e1?entry=gps&coh=192189&g_ep=CAESBzI2LjQyLjEYACCenQoq0QEsMTAwODQzMDQ4LDk0MjY3NzI3LDk0MjkyMTk1LDk0Mjk5NTMyLDEwMDc5NjQ5OCwxMDA3OTc3NjEsMTAwNzk2NTM1LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgzNTcxMCwxMDA4MjUwMjUsMTAwODIwMjM3LDEwMDgyMjQ5NCwxMDA4Mjc5NzUsMTAwODM4MzU5LDEyMTgxNjQ2MUICSU4%3D&skid=0c10a3f3-24a4-42a8-9d9a-aa478eb7eedb&g_st=aw',
   logo: '/VRR1.jpeg',
   heroImage: '/images/vrr-academy-building.jpg',
   heroImageAlt: 'VRR Career Academy campus building facade with PU Science, JEE, NEET, and KCET admissions information',
